@@ -30,7 +30,9 @@ const styles = theme => ({
 });
 
 class ToDO extends Component {
-  state = {};
+  state = {
+    item: ""
+  };
 
   generate = () => {
     return this.props.items.map(item => (
@@ -89,7 +91,7 @@ class ToDO extends Component {
               />
             </FormControl>
             <FormControl>
-              <Button>Add</Button>
+              <Button type="submit">Add</Button>
             </FormControl>
           </form>
         </div>
